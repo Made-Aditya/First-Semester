@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabel Matkul</title>
+    <style>
+        body{
+            background:linear-gradient(to bottom, #ffffff, #34495E) ;
+        }
+        .table-container {
+            border-radius: 15px;
+            overflow: hidden;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.466);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       th, td{
+            padding: 8px;
+            text-align: center;
+       }
+       th {
+            background-color: #34495E;
+            color:white;
+       }
+       th:first-child{
+            border-top-left-radius: 15px;
+       }
+       td{
+            background-color:#e5e8e9;
+            border: 1px solid rgb(255, 255, 255)
+       }
+       caption {
+            caption-side:top;
+            padding-top: 10px;
+            text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.555);
+       }
+       .content{
+            background-color:#95A5A6;
+       }
+       .istirahat{
+            background-color:#95A5A6;
+            border: #95A5A6;
+       }
+       tr:hover td:not(.content):not(.istirahat) {
+            transition: background-color 0.2s linear;
+            background-color: #AAB7B0;
+       }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            
+            <div class="theading">
+                <tr>
+                    <th>Hari</th>
+                    <th colspan="2">Mata Kuliah - Dosen Pengajar - Jam - Ruangan</th>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td class="content">Minggu</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td class="content" rowspan="2">Senin</td>
+                    <td>1</td>
+                    <td>Bahasa Inggris Teknik<br>Aris Bahari Rizki<br>11:20 sd 13:30<br>B 203</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Logika dan Algoritma<br>Ferry Astika Saputra<br>08:00 sd 09:40<br>PS-05.12</td>
+                </tr>
+                <tr>
+                    <td  class="content">Selasa</td>
+                    <td>1</td>
+                    <td>Keterampilan Non Teknis<br>Rengga Asmara<br>08:00 sd 10:30<br>C 203</td>
+                </tr>
+                <tr>
+                    <td  class="content" rowspan="3">Rabu</td>
+                    <td>1</td>
+                    <td>Konsep Teknologi Informasi<br>M. Udin Harun Al Rasyid<br>08:00 sd 09:40</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Matematika<br>Rosiyah Faradisa<br>14:40 sd 16:20<br>SAW-01.05</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pancasila<br>Mochamad Mobed Bachtiar<br>10:30 sd 12:10<br>SAW-10.08</td>
+                </tr>
+                <tr>
+                    <td  class="content" rowspan="3">Kamis</td>
+                    <td>1</td>
+                    <td>Konsep Pemrograman<br>Nana Ramadijanti<br>08:00 sd 09:40<br>SAW-05.07</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dasar Sistem Informasi<br>Rengga Asmara<br>11:20 sd 13:30<br>B 303</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Workshop Desain Web<br>Mu'arifin<br>13:50 sd 16:20<br>C 303</td>
+                </tr>
+                <tr>
+                    <td  class="content">Jum'at</td>
+                    <td>1</td>
+                    <td>Praktek Konsep Pemrogaman<br>Nana Ramadijanti<br>08:00 sd 09:40<br>C 102</td>
+                </tr>
+                <tr>
+                    <td  class="content">Sabtu</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td  class="istirahat" colspan="3">Waktu Istirahat : 12:10 sd 13.00</td>
+                </tr>
+            </div>
+        </table>
+</body>
+</html>
