@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <title>Portofolio - Made Bagus Aditya Putra</title>
+</head>
+<style>
+  .navbar{
+    background-color: rgb(0, 0, 0, 0.50);
+  }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;max-width: 80%;
+            margin:auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.466);
+        }
+       th, td{
+            padding: 8px;
+            text-align: center;
+       }
+       th {
+            background-color: #34495E;
+            color:white;
+            border:1px solid #34495E;
+       }
+       td{
+            background-color:#e5e8e9;
+            border: 1px solid rgb(255, 255, 255);
+       }
+
+       .content{
+            background-color:#95A5A6;
+       }
+       .istirahat{
+            background-color:#95A5A6;
+            border: 1px solid #95A5A6;
+       }
+       tr:hover td:not(.content):not(.istirahat) {
+            transition: background-color 0.2s linear;
+            background-color: #AAB7B0;
+       }
+</style>
+<!--Name, Major, Campus, short profil, previous education, etc -->
+<body class="bg-dark">
+    <!--Navigation Section-->
+    <nav class="navbar navbar-expand-md navbar-dark text-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Homepage.html">
+          <img src="assets/goat-svgrepo-com.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">Magus
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class=" navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Jadwal.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Beginning of Jadwal-->
+    <div class="container-fluid">
+      <div class="row text-light">
+        <div class="col"></div>
+        <div class="col">My</div>
+        <div class="col"></div>
+      </div>
+      <div class="row text-light mt-1 text-center">
+        <div class="col-3"></div>
+        <div class="col-6 h3">"College Schedule"</div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row text-light mt-1 text-end">
+        <div class="col"></div>
+        <div class="col">at <Span class="h6 text-primary">PENS</Span></div>
+        <div class="col"></div>
+      </div>
+      <div class="row my-3">
+        <div class="table-container">
+          <table>
+              <div class="theading">
+                  <tr>
+                      <th class="text-center">Hari</th>
+                      <th colspan="2" class="text-center">Mata Kuliah - Dosen Pengajar - Jam - Ruangan</th>
+                  </tr>
+              </div>
+              <div>
+                  <tr>
+                      <td class="content">Minggu</td>
+                      <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                      <td class="content" rowspan="2">Senin</td>
+                      <td>1</td>
+                      <td>Bahasa Inggris Teknik<br>Aris Bahari Rizki<br>11:20 sd 13:30<br>B 203</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Logika dan Algoritma<br>Ferry Astika Saputra<br>08:00 sd 09:40<br>PS-05.12</td>
+                  </tr>
+                  <tr>
+                      <td  class="content">Selasa</td>
+                      <td>1</td>
+                      <td>Keterampilan Non Teknis<br>Rengga Asmara<br>08:00 sd 10:30<br>C 203</td>
+                  </tr>
+                  <tr>
+                      <td  class="content" rowspan="3">Rabu</td>
+                      <td>1</td>
+                      <td>Konsep Teknologi Informasi<br>M. Udin Harun Al Rasyid<br>08:00 sd 09:40</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Matematika<br>Rosiyah Faradisa<br>14:40 sd 16:20<br>SAW-01.05</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Pancasila<br>Mochamad Mobed Bachtiar<br>10:30 sd 12:10<br>SAW-10.08</td>
+                  </tr>
+                  <tr>
+                      <td  class="content" rowspan="3">Kamis</td>
+                      <td>1</td>
+                      <td>Konsep Pemrograman<br>Nana Ramadijanti<br>08:00 sd 09:40<br>SAW-05.07</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Dasar Sistem Informasi<br>Rengga Asmara<br>11:20 sd 13:30<br>B 303</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Workshop Desain Web<br>Mu'arifin<br>13:50 sd 16:20<br>C 303</td>
+                  </tr>
+                  <tr>
+                      <td  class="content">Jum'at</td>
+                      <td>1</td>
+                      <td>Praktek Konsep Pemrogaman<br>Nana Ramadijanti<br>08:00 sd 09:40<br>C 102</td>
+                  </tr>
+                  <tr>
+                      <td  class="content">Sabtu</td>
+                      <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                      <td  class="istirahat" colspan="3">Waktu Istirahat : 12:10 sd 13.00</td>
+                  </tr>
+              </div>
+          </table>
+      </div>
+      </div>
+    </div>
+    
+
+    <!-- Bootstrap Javascript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Popper Javascript -->
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
